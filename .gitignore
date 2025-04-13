@@ -1,3 +1,4 @@
 data.db
 config-my.yaml
 .DS_Store
+frontend/package-lock.json
