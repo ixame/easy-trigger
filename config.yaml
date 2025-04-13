@@ -1,0 +1,22 @@
+database:
+  host: 
+  port: 
+  user: 
+  password: 
+  dbname: 
+
+sqlite:
+  path: "data.db"
+
+server:
+  port: ":8080"
+  db_type: "sqlite"
+
+admin:
+  username: "admin"
+  password: "admin"
+  # dbtype: "mysql"
+
+logging:
+  level: "info"
+  path: "./logs"
