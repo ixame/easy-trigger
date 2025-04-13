@@ -12,7 +12,7 @@ ENV CGO_ENABLED=1
 RUN go build -ldflags="-extldflags=-static" -o main
 
 # 前端构建代码
-FROM node:18-alpine AS frontend-builder
+FROM node:22-alpine AS frontend-builder
 WORKDIR /app
 COPY ./frontend/ .
 RUN npm install
