@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  easy-trigger:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./config.yaml:/app/config.yaml
+      - ./data.db:/app/data.db
+    ports:
+      - "8080:8080"
